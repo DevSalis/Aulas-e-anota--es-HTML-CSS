@@ -1,0 +1,75 @@
+/*
+Para ativar a estilização de um PSEUDO ELEMENTO, precisa-se acrescentar :: apos a tag desejada
+e escolher qual elemento da referida tag vc quer estilizar.
+ex: input + :: + placeholder => input::placeholder {ALTERAR OS ESTILOS DESEJADOS}
+
+Para ativar a estilização de uma PSEUDO CLASS, precisa-se acrescentar : apos a tag desejada
+e escolher qual elemento da referida tag vc quer estilizar.
+ex: a + : + active ou visited, hover, checked, disabled etc... {ALTERAR OS ESTILOS DESEJADOS}
+
+            ACTIVE=>    A estilização acontece no momento em que o elemento é clicado e permanecer precionado.
+            VISITED=>   A estilização acontece no momento que o link foi visitado.
+            HOVER=>     A estilização acontece no momento em que o cursor passa sobre o elemento.
+            CHECKED=>   A estilização acontece no momento em que o imput com as propriedades (radio, checkbox, select) for clicado.
+            DISABLED=>  A estilização serve para imput e button, essa configuração é aplicada a um desses elementos
+                        quando sua função ainda não é necessaria, devido a dependencia de outras atividades no site
+                        que provoquem a ativação e disponibilidade do button ou imput ser clicado.
+            FOCUS=>     Destacar, ou focar o lemento clicado, nesse momento o estilo se mantem ativo,
+                        ate que aquele elemento não esteja mais sendo usado.
+            READ-ONLY=> Tem praticamente a mesma função do DISABLED, porem pode-se acrescentar um inforção,
+                        que servirá APENAS COMO LEITURA.
+            EMPYT=>     Quando um caixa (div, section) esta vazia, podemos aplicar estilos para indentificar
+                        a ausencia de informações nessa caixa. e de forma dinamica ataravez do javascript,
+                        o proprio usuario do site vai preencher esse espaço, provocando assim novas caracteristicas nessa caixa.
+                        exemplo disso seria o carrinho de compras o site, que inicia vazio e é preenchido com as informções do usuario.
+            FIRST-CHILD=> Altera as caracteristica do "primeiro filho do pai". ex: primeira LI de uma UL
+                        ou o primeiro SPAN de uma DIV.
+                        obs. As configurações se repetira por todas as CLASS iquais.
+            FIRST-OF-TYPE=> Altera as caracteristica do "primeiro filho do pai". ex: primeira SPAN ou PARAGRAFO.
+                        obs. As configurações NÃO se repetira por todas as CLASS iquais, apenas o primeiro conteudo do FILHO, dentro de um PAI.  
+            LAST-CHILD=> Altera as caracteristica do "ultimo filho do pai". ex: primeira LI de uma UL
+                        ou o ultimo SPAN de uma DIV.
+                        obs. As configurações se repetira por todas as CLASS iquais.
+            FIRST-OF-TYPE=> Altera as caracteristica do "Ultimo filho do pai". ex: ultima SPAN ou PARAGRAFO.
+                        obs. As configurações NÃO se repetira por todas as CLASS iquais, apenas o ultimo conteudo do FILHO, dentro de um PAI.
+            NOT()=>     A tag colocada dentro dos (PARENTESES) seram insentos de estilização.
+            NTH-CHILD()=> Dentro dos (PARENTESES) coloca o elemento especifo que sera estilizado, considerando a ordem CRESCENTE da distribuição da LI
+            NTH-LAST-CHILD()=> Dentro dos (PARENTESES) coloca o elemento especifo que sera estilizado, considerando a ordem DECRESCENTE da distribuição da LI
+                       
+*/
+
+* {
+    margin: 30;
+    padding:30;
+    box-sizing: border-box;
+}
+
+div:not(a){
+    color: rgb(245, 45, 5);
+}
+
+span:first-of-type{
+    color:rgb(236, 13, 180)
+}
+
+
+
+li:last-child{
+    color: rgb(98, 138, 170);
+}
+
+input::placeholder {
+    color: blue;
+}
+
+
+
+p:first-of-type{
+    color: chartreuse;
+}
+
+
+
+a:visited {
+    color: rgb(82, 11, 246);
+}

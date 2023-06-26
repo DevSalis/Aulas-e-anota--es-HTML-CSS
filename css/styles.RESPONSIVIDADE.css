@@ -1,0 +1,37 @@
+/*
+@MEDIA=>    Serve para determinar um estilo CSS para cada tipo de mídia que te interessar.
+            Os mais comuns de se ver são os @media SCREEN e @media PRINT,
+
+            @media screen=> determinas o CSS para telas.
+                ex: PC, celulares, tablets.
+            @media print=> determina um CSS apenas quando for imprimir a página.
+                ex: quando a pagina do site for impressa, ela pode sair com a marca d'agua do site.
+
+END=>   são OPERADORES LOGICOS, após o @MEDIA seguido da configuração SCREEN, PRINT ou outros,
+        o END seria como criar uma nova configuração, ou condição definidas entre (AQUI)
+        para que as informações entre os {AQUI} aconteça como definirmos.
+        ex: @media+screen+and+(MAX-WIDTH: 600PX)+{STYLOS DA RESPECTIVA TAG QUE DESEJA ALTERAR}
+
+ORIENTATION: PORTRAIT=>  Altura maior que largura. Ex: tela em pé, (na vertical / formato retrato) 
+ORIENTATION: LANDSCAPE=> Largura maior que altura. Ex: tela deitada, (na horizontal / formato paisagem) 
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    height: 700px;
+    width: 700px;
+    background: blue;
+}
+
+@media screen and (max-width: 600px) and (orientation: landscape) {
+    div {
+        background: red;
+        height: 200px;
+        width: 200px;    
+    }
+}

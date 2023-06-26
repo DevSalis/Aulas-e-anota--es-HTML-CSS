@@ -1,0 +1,57 @@
+
+button {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    color: darkgreen;
+    text-shadow: 01px 01px 02px #010800;
+    font-style:normal;
+    font-weight: 900;
+    
+} 
+
+h1 {
+        color: #ABE048;
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        text-shadow: 03px 02px 05px #010800; /*COLOCA SOMBRA NO TEXTO NA RESPECTIVA ORDEM=> HORIZONTAL, VERTICAL, DENSIDADE DA SOMBRA E COR*/
+    }
+
+p {
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Roboto', sans-serif;
+        color: rgb(15, 1, 1); /*COLOCAR COR DO TEXTO, SEJA EM EXADECIMAL, RGB OU SIMPLESMENTE DIGITANDO O NOME DA COR*/
+        background-color: rgb(244, 245, 245); /*PLANO DE FUNDO DO TEXTO*/
+        font-size: 15px; /*ALMENTA O TAMANHODO TEXTO*/
+        font-weight: 900; /*ALMENTA A ESPERSURA DO TEXTO*/
+        font-style: normal; /*ESTILOS DA FONTE, EX: NEGRITO, ITALICO*/
+        line-height: 40px; /*DISTANCIA DE LINHAS*/
+        letter-spacing: 05px; /*ALMENTA A DISTANCIA ENTRE AS LETRAS*/
+        word-spacing: 10px; /*ALMENTA A DISTANCIA ENTRE AS PALAVRAS*/
+        text-align: center; /*ORGANIZA O TEXTO A DIREITA, ESQUERDA, JUSTIFICAR OU CENTRALIZADO*/
+        text-transform: capitalize; /*LETRAS MAIUSCULAS, MENUSCULAS, OU APENAS A PRIMEIRA LETRA*/
+        text-decoration: underline; /*DECORA O TEXTO, COM LINHA A BAIXO, LINHA ACIMA ETC*/
+    }
+
+.box {
+    background: green;
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    padding: 120px; /*O PADDING ESPANDE DE DENTRO PRA FORA*/
+    display: inline-block;
+}
+
+.litte-box{
+    
+}
+
+.box2 {
+    background: rgba(202, 246, 4, 0.883);
+   
+}
+
+.box3 {
+    background: rgb(11, 22, 228);
+ 
+}

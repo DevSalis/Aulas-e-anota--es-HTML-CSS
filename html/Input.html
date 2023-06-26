@@ -1,0 +1,42 @@
+<!--
+    A tag <input> São os campo de pesquisa ou seleção em uma pagina.
+    ex: Google ou "clique em não sou um robor para confirmar"
+
+    Dentro ca tag <input> podemos usar algumas configurações (parametros):
+
+        => autocomplete="SERVE PARA COMPLETAR A INFORMAÇÃO QUE VOCÊ COMEÇOU A DIGITAR, DEPENDENDO DA DEFINIÇÃO JA PRE-DEFINIDO NO CODIGO"
+        Ex: street-eddress (endereço)
+            email
+            name
+
+        => disabled (desabilita o input)
+
+        => value="A DESCRIÇÃO QUE FICA VISIVEL DENTRO DO INPUT E NÃO SOME QUANDO O USUARIO CLICA, SERVE COMO AUXÍLIO DA INFORMÇÃO QUE SERÁ DIGITADA"
+        Ex: DDD da região
+
+        => readonly (somente leitura)
+
+        => placeholder="DESCRIÇÃO DO QUE DEVE SER INSERIDO NO INPUT, O MESMO DESAPARECE AO CLICAR DENTRO DO CAMPO"
+
+        => autofocus (Destacar, focar o input mesmo sem clicar dentro dele)
+
+    A tag <label>SERVE PARA ACRESCENTAR INFORMAÇÕES LIGADAS AO INPUT, POREM FORA DO INPUT</label>
+        Ex: Digite seu DDD mais numero telefonico.
+
+        OBS: Para que as informções ligadas ao input estejão de fato conectadas, o input deve ser incerido dentro da tag label.
+        Ex 1: <laber>Digite seu DDD mais numero telefônico<input></label>
+        
+        Ex 2:   <label for="telefone">Digite seu DDD mais numero telefonico</libel>
+                <input id="telefone">
+
+        => for="PROCURA POR UM ID"
+        => id="INDENTIFICAÇÃO DO INPUT"
+
+-->
+<label for="telefône">Digite seu DDD mais numero telefônico</label>
+<input id="telefône"
+autofocus
+value="(81)"
+placeholder="fone"
+>
+<input type="checkbox">

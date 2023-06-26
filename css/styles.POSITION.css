@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*BORDER-BOX será a soma do conteúdo com a borda e o padding.*/
+    width: 200vh; /*VH é uma unidade de medida que define o tamanho da sua pagina*/
+    height: 200vh;
+}
+
+.box-dad{
+background: red;
+width: 350px;
+height: 350px;
+
+}
+
+.box-son{
+    background: rgb(6, 0, 0);
+    width: 100px;
+    height: 100px;
+    color: azure;
+
+}
+
+.box-neighbor{
+    background: rgb(247, 228, 11);
+    width: 200px;
+    height: 200px;
+    color: blue;
+}
+
+/*
+POSITINO: STATIC=> Esse é o "PADRÃO", se nenhuma configuração de posicionamento for aplicado,
+                os elementos ficarão altomaticamnete como STATIC,
+                posicionados no canto esquerdo superior da pagina.
+
+POSITION: FIXED=> O elemento com essa configuração flutua para frente da pagina,
+                Porém fixada na posição pré-definida (top, left,  bottom...)
+
+POSITION: STICKY=> Semelhante ao fixed, essa propriedade fixa o elemento em uma determinada posição,
+                Porém não exatamente a pagina e sim ao meu ponto de vista em relação
+                a barra de rolagem exibindo o conteudo da pagina, (como se o elemento estivesse colado
+                na tela do pc e não na pagina)
+
+POSITION: RELATIVE=> O elemento será posicionado de acordo com as medidas definidas (topo, base, esquerda, direita)
+                Porém tendo como posição zero sua posição de origem.
+
+POSITION: ABSOLUTE=> Assim como no POSITION FIXED, o ABSOLUTE flutua a frente da pagina, (CASO ELE SEIJA UMA "CAIXA-MATRIX")
+                e naturalmente os alementos que antes estavam abaixo, assumem a posição para cima e a esquerda disponivel na pagina.
+                Caso o elemento esteja dentro de uma <div> ou <section>... caso esteja dentro de qualquer "caixa".
+                se essa "caixa-matrix" for STATIC, o elemento que estiver dentro dele e for aplicado o ABSOLUTE,
+                Esse elemento também flutua e poderá se posicionar segundo suas margin, ignorando a "caixa-matrix"
+                passando a ter como ponto zero de referencia o topo esquerdo da pagina.
+                
+outras propriedades:
+
+OPACITY=> Ajusta a transparencia do elemento
+
+
+*/
