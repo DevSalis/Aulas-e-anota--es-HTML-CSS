@@ -19,8 +19,40 @@ VARIAVEIS => Um espaço de memoria (como uma pasta reservada) para armasenar val
 let - permite trocar o valor da variavel a qualquer momento, se for do interesse do programador.
 const - o valor é constante, por tanto não pode sofrer alterações
 var - fora de uso
+
+obs: N pode ter variaves com nomes repetidos, independente de serem LET ou CONST
 */
 
 const abacate = 40
-
 console.log(abacate)
+
+/*
+TIPOS DE DADOS
+
+String => Textos (para add texto ao codgo do JS, ou seja, p add STRING ao codgo do JS,
+    a informação deve esta entre "ASPAS DUPLAS" , 'ASPAS SIMPLES' ou `CRASES`)
+
+*/
+
+const texto1 = "TESTANDO AS ASPAS DUPLAS"
+const texto2 = 'TESTANDO AS ASPAS SIMPLES'
+const texto3 = `TESTANDO AS CRASES` //As crases são chamadas de TEMPLATE LITERALS ou TEMPLATE STRING
+
+console.log(texto1)
+console.log(texto2)
+console.log(texto3)
+
+/*
+TEMPLATE STRING => os textos dentro das `crase` possibilita pular linhas no codigo,
+                    Além de permitir que variaves sejam add.
+                    para isso, essa variavel precisa esta entre ${ESTAR AQUI}
+
+*/
+
+// ex:
+
+const idade = 38
+const profissao = `programador`
+const sobreMim = `Meu nome é Silas tenho ${30 + 9} e sou um ${profissao}`
+
+console.log(sobreMim)
