@@ -43,7 +43,7 @@ console.log(texto2)
 console.log(texto3)
 
 /*
-TEMPLATE STRING => os textos dentro das `crase` possibilita pular linhas no codigo,
+template string => os textos dentro das `crase` possibilita pular linhas no codigo,
                     Além de permitir que variaves sejam add.
                     para isso, essa variavel precisa esta entre ${ESTAR AQUI}
 
@@ -56,3 +56,18 @@ const profissao = `programador`
 const sobreMim = `Meu nome é Silas tenho ${30 + 9} e sou um ${profissao}`
 
 console.log(sobreMim)
+
+/*
+numbers => Numeros (dados referentes a numeros, seja por numerção exata ou calculos)
+            Para o dados de numero seren execultados com sua respectiva função,
+            a informação apos o sinal de = NÃO pode esta entre aspas.
+
+*/
+
+//ex:
+
+const number1 = 100
+const number2 = 100 + 1
+
+console.log(number1)
+console.log(number2)
