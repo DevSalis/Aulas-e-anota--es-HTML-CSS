@@ -71,3 +71,9 @@ const number2 = 100 + 1
 
 console.log(number1)
 console.log(number2)
+
+/*
+boolean => Boleano, é um tipo de dado em programação que possui dois possíveis valores:
+        verdadeiro (true) ou falso (false). Ele é usado para representar
+        condições lógicas e é fundamental em muitas operações e estruturas de controle.
+*/
