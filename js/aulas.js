@@ -77,3 +77,29 @@ boolean => Boleano, é um tipo de dado em programação que possui dois possíve
         verdadeiro (true) ou falso (false). Ele é usado para representar
         condições lógicas e é fundamental em muitas operações e estruturas de controle.
 */
+
+/*
+object => Os objetos em JS diferente do "cochetes" esses são compostos por {pares de chave,e entre elas o valor, ou as informações},
+        a chave é uma string que representa o nome da propriedade
+        e o valor pode ser qualquer tipo de dado, incluindo outros objetos.
+        Eles são amplamente utilizados para organizar e manipular dados de forma estruturada, ou agrupadas.
+ */
+
+//ex:
+
+const silas = {
+name: "Silas Felipe da S Costa",
+age: 38,
+profession: "Web Developer",
+course: "DevClub",
+address: {
+    street: "R Catuana",
+    number: 50 + 7,
+    city: "Recife",
+    state: "PE",
+    conntry: "Brasil"
+}
+
+}
+
+console.log(silas)
