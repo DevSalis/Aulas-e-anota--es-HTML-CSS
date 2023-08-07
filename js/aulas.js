@@ -103,3 +103,19 @@ address: {
 }
 
 console.log(silas)
+
+/*
+null => o valor "null" é usado para representar a ausência INTENCIONAL de um valor ou a falta de um objeto.
+undefined =>  indica que uma variável não foi declarada ou não possui um valor atribuído.
+            Na pratica, é quando você sugere uma ação, porem essa informção não existe no codigo,
+            uma vez que undefined aparece no codigo, significa que algo esta errado.
+*/
+
+//ex:
+
+const nullEundefined = {
+    name: "null",
+}
+
+console.log(nullEundefined)
+console.log(nullEundefined.id)
