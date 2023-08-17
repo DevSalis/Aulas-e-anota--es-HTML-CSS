@@ -119,3 +119,25 @@ const nullEundefined = {
 
 console.log(nullEundefined)
 console.log(nullEundefined.id)
+
+/*
+array => é uma estrutura de dados que armazena uma coleção de elementos do mesmo tipo.
+        Os elementos são organizados sequencialmente em posições numeradas, chamadas de índices.
+        A ordem numerica inicia-se apartir do numero ZERO (ex: 0, 1, 2, 3)
+        Cada elemento (seja um string, number, object) deve esta entre os [colchetes]
+        e serem separados pela virgula. ex: ["string", 01, {object: "string", number: 01}]
+        Isso permite o acesso e a manipulação dos elementos de forma eficiente.
+*/
+
+//ex:
+
+const exArray = [
+    "string",
+    20 * 5,
+    {name: "Silas Felipe"},
+    {age: 100 / 5}
+]
+
+exArray[2].name = "Rute Poliana"
+
+console.log(exArray)
