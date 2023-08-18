@@ -88,17 +88,17 @@ object => Os objetos em JS diferente do "cochetes" esses são compostos por {par
 //ex:
 
 const silas = {
-name: "Silas Felipe da S Costa",
-age: 38,
-profession: "Web Developer",
-course: "DevClub",
-address: {
-    street: "R Catuana",
-    number: 50 + 7,
-    city: "Recife",
-    state: "PE",
-    conntry: "Brasil"
-}
+    name: "Silas Felipe da S Costa",
+    age: 38,
+    profession: "Web Developer",
+    course: "DevClub",
+    address: {
+        street: "R Catuana",
+        number: 50 + 7,
+        city: "Recife",
+        state: "PE",
+        conntry: "Brasil"
+    }
 
 }
 
@@ -134,10 +134,45 @@ array => é uma estrutura de dados que armazena uma coleção de elementos do me
 const exArray = [
     "string",
     20 * 5,
-    {name: "Silas Felipe"},
-    {age: 100 / 5}
+    { name: "Silas Felipe" },
+    { age: 100 / 5 }
 ]
 
 exArray[2].name = "Rute Poliana"
 
 console.log(exArray)
+
+/*
+OPERADORORES DE COMPARAÇÃO:
+
+>  => Maior que...
+<  => Menor que...
+== => Iqual que...
+
+CONTROALDOR DE FLUXO:
+
+if => (se) é uma estrutura que permite executar algo solicitado uma vez que a inforção de fato exista
+        se relmente for VERDADADEIRO.
+        ex: let (idade = 18);
+            if (idade >= 18) {
+                console.log("Maior de idade")
+            }
+
+else => (se não) essa estrutura é execultada uma vez que o IF foi considerada inexistente ou FALSA.
+        ex: let idade = 18;
+            if (idade >= 18) {
+                console.log("Maior de idade");
+            }
+            else {
+                console.log("Menor de idade");
+            }
+*/
+
+let idade2 = 18
+
+if (idade2 >= 18) {
+    console.log("Maior de idade")
+}
+else {
+    console.log("Menor de idade")
+}
