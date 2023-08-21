@@ -168,6 +168,8 @@ else => (se não) essa estrutura é execultada uma vez que o IF foi considerada 
             }
 */
 
+//ex:
+
 let idade2 = 18
 
 if (idade2 >= 18) {
@@ -176,3 +178,18 @@ if (idade2 >= 18) {
 else {
     console.log("Menor de idade")
 }
+
+/*
+function => É um trecho do código que só é execultado quando a ação determinada acontecer.
+            Ex: uma informação que deve aparecer quando um botão for clicado, ou seja,
+            INFORMAÇÃO (valor ja foi atribuido a FUNCTION no codigo)
+            AO CLICAR O BOTÃO (condição imposta na FUNCTION para que o trexo do codigo seja executado)
+*/
+
+//ex:
+
+function testandoAfunction(){
+    console.log("A FUNCTION apareceu na tela")
+}
+
+testandoAfunction()
