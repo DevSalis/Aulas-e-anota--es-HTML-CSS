@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+head {
+    display: inline-block;
+}
+
+h1 {
+    font-size: 70px;
+    margin-top: 20px;
+    margin-left: 20px;
+    display: inline-block;
+    color: aquamarine;
+}
+
+.menu {
+    display: inline-block;
+    margin-left: 50px;
+    font-size: 30px;
+    font-weight: 400;
+    color: aliceblue;
+    
+}
+
+a {
+    margin-left: 50px;
+    cursor: pointer;
+    
+}
+
+#pesquisa {
+    margin-left: 50px;
+    padding: 10px;
+}
+
+button {
+    
+    color: rgb(23, 122, 202);
+    font-style:normal;
+    font-weight: 900;
+    padding: 10px;
+    cursor: pointer;
+}
