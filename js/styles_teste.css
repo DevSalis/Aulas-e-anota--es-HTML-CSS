@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+head {
+    display: inline-block;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+.menu {
+    display: inline-block;
+   
+}
+
+button {
+    
+    color: darkgreen;
+    text-shadow: 01px 01px 02px #010800;
+    font-style:normal;
+    font-weight: 900;
+}
