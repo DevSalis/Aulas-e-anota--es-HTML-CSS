@@ -26,3 +26,11 @@ document => essa é a referencia do HTML dentro do código JS.
 const input = document.getElementById("main-input")
 
 console.log(input)
+
+const classes = document.getElementsByClassName("cabeçario1")
+
+console.log(classes)
+
+const tags = document.getElementsByTagName("div")
+
+console.log(tags)
