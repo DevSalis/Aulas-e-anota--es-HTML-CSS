@@ -23,4 +23,6 @@ document => essa é a referencia do HTML dentro do código JS.
 
 //ex:
 
-document.getElementByIds
+const input = document.getElementById("main-input")
+
+console.log(input)
