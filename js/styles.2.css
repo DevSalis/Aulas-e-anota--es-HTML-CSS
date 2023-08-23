@@ -1,46 +1,110 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-head {
-    display: inline-block;
+body {
+    background-size: 100%;
+
+}
+
+header {
+    display: inline;
+}
+
+img {
+    width: 60px;
+    align-items: center;
+}
+
+.cabeçario1 {
+    display: inline;
+    margin-left: 10px;
+}
+
+.cabeçario2 {
+    display: inline;
+    font-weight: 600;
+    color: rgb(244, 247, 248);
+    margin-left: 80px;
+}
+
+.cabeçario3 {
+    display: inline;
 }
 
 h1 {
-    font-size: 70px;
-    margin-top: 20px;
-    margin-left: 20px;
+    font-size: 40px;
     display: inline-block;
-    color: aquamarine;
-}
-
-.menu {
-    display: inline-block;
-    margin-left: 50px;
-    font-size: 30px;
-    font-weight: 400;
-    color: aliceblue;
-    
+    color: rgb(245, 229, 10);
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 10px;
 }
 
 a {
-    margin-left: 50px;
+
     cursor: pointer;
-    
+    margin-left: 40px;
+    font-size: 20px;
+    display: inline;
+
 }
 
 #pesquisa {
-    margin-left: 50px;
+
     padding: 10px;
+    width: 20%;
+    display: inline;
+    margin-left: 30px;
 }
 
 button {
-    
+
     color: rgb(23, 122, 202);
-    font-style:normal;
     font-weight: 900;
     padding: 10px;
     cursor: pointer;
+    display: inline;
+    margin-left: 10px;
+
+}
+
+section {
+    display: block;
+    margin-top: 40px;
+    margin-left: 80px;
+}
+
+h2 {
+    color: rgb(203, 247, 7);
+}
+
+p {
+    color: rgb(251, 251, 252);
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+h3 {
+    margin-top: 40px;
+    color: rgb(203, 247, 7);
+}
+
+ul {
+    margin-top: 20px;
+    color: rgb(251, 251, 252);
+    font-weight: 600;
+    font-size: 20px;
+}
+
+footer {
+    margin-top: 110px;
+    display: block;
+    background-color: gold;
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+
 }
