@@ -34,3 +34,53 @@ console.log(classes)
 const tags = document.getElementsByTagName("div")
 
 console.log(tags)
+
+const nomes = document.getElementsByName("nome-completo")
+
+console.log(nomes)
+
+/*
+queryselector => é mais um dos método da interface Document
+                que permite selecionar elementos HTML usando estruturas do CSS. 
+                Ele retorna o primeiro elemento que corresponde ao valor desejado.
+*/
+
+//ex: buscando uma TAG
+
+const elements = document.querySelector("a")
+
+console.log(elements)
+
+//ex: buscando uma class
+
+const elements2 = document.querySelector(".cabeçario1")
+
+console.log(elements2)
+
+//ex: buscando uma Id
+
+const elements3 = document.querySelector("#main-input")
+
+console.log(elements3)
+
+//ex: buscando um elemento especifico, que não é necessariamente o primeiro na sequencia cascata do código
+
+const elements4 = document.querySelector("div.cabeçario3")
+
+console.log(elements4)
+
+//ex: buscando todos elementos com referencia semelhantes, independente de sua posição no HTML
+
+const elements5 = document.querySelectorAll("div")
+
+console.log(elements5)
+
+//Alterando eleentos do HTML
+
+const elements6 = document.querySelector("#main-input")
+
+elements6.placeholder = "ver se mudou"
+
+console.log(elements6)
+
+
