@@ -77,10 +77,25 @@ console.log(elements5)
 
 //Alterando eleentos do HTML
 
-const elements6 = document.querySelector("#main-input")
+const abacatinho = document.querySelector("#main-input")
 
-elements6.placeholder = "ver se mudou"
+abacatinho.placeholder = "mudei o const"
 
-console.log(elements6)
+console.log(abacatinho)
+
+/*
+Alterando e acessando texto:
+
+textContent => Pega todo conteúdo (Mostra APENAS oque esta no HTML)
+innerText => Pega APENAS o texto (Mostra o texto e tmb configurações do CSS)
+innerHTML => Pega todo conteúdo igualmente o textContent (Permite add HTML as alterações do texto)
+*/
+
+//ex:
+
+const exemplo = document.querySelector("p")
+
+exemplo.innerHTML = "teste <b>negrito</b>"
+console.log(exemplo.innerHTML)
 
 

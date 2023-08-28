@@ -11,6 +11,7 @@ body {
 
 header {
     display: inline;
+    align-items: center;
 }
 
 img {
@@ -36,7 +37,7 @@ img {
 
 h1 {
     font-size: 40px;
-    display: inline-block;
+    display: inline;
     color: rgb(245, 229, 10);
     text-align: center;
     margin-top: 30px;
@@ -46,7 +47,7 @@ h1 {
 a {
 
     cursor: pointer;
-    margin-left: 40px;
+    margin-left: 35px;
     font-size: 20px;
     display: inline;
 
