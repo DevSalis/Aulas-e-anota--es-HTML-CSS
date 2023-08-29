@@ -98,4 +98,21 @@ const exemplo = document.querySelector("p")
 exemplo.innerHTML = "teste <b>negrito</b>"
 console.log(exemplo.innerHTML)
 
+/*
+Alterando CSS dentro do JS.
+
+obs: As probriedades escolhidas do CSS para serem alteradas atarvez do JS,
+        uma vez que tenha em sua estrutura um hifen separaando as palavras, o mesmo deve ser ignorado
+        dentro do JS, sendo o mesmo substituido por letra maiúscula no início da palavra sequinte.
+
+        ex1: background-color => backgroundColor
+        ex2: font-size => fontSize
+*/
+
+//ex:
+
+const trocandoCssNoJs = document.querySelector("h1")
+
+trocandoCssNoJs.style.color = "#fff"
+
 
