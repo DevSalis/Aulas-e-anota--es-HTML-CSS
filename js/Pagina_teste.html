@@ -24,15 +24,15 @@
         </nav>
 
         <div class="cabeçario3">
-            <input id="main-input" placeholder="Digite aqui" name="nome-completo">
-            <button>Pesquisar</button>
+            <input onkeypress="digiteiNoInput()" id="main-input" placeholder="Digite aqui" name="nome-completo">
+            <button onclick="cliqueiNoBotao()">Pesquisar</button>
         </div>
 
     </header>
     <section>
         <main>
             <h2>PARAGRAFO NO H2</h2>
-            <p>Apredendo finalmente o JS, e aproveitando para praticar HTML e CSS.</p>
+            <p oninput="digiteiNoInput()">Apredendo finalmente o JS, e aproveitando para praticar HTML e CSS.</p>
             <h3>LISTA NÃO ORDENADA</h3>
             <ul>
                 <li>HTML Semantico</li>

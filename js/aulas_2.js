@@ -115,4 +115,25 @@ const trocandoCssNoJs = document.querySelector("h1")
 
 trocandoCssNoJs.style.color = "#fff"
 
+/*
+Eventos => são ações ou ocorrências que podem ser detectadas pelo navegador ou pelo usuário
+        e desencadeiam uma resposta específica no código.
+        Essas ações podem incluir cliques de mouse, pressionamentos de teclas, carregamento da página,
+        redimensionamento da janela, entre outros.
+*/
+
+//ex: Criano eventos entre HTML e JS
+
+const inputTeste = document.querySelector("#main-input")
+
+const meuParagrafo = document.querySelector("p")
+
+function cliqueiNoBotao(){
+console.log(inputTeste.value)
+}
+
+function digiteiNoInput(){
+        meuParagrafo(inputTeste.value)
+}
+
 
