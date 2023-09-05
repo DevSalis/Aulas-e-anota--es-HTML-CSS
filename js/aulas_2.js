@@ -124,16 +124,10 @@ Eventos => são ações ou ocorrências que podem ser detectadas pelo navegador 
 
 //ex: Criano eventos entre HTML e JS
 
-const inputTeste = document.querySelector("#main-input")
-
-const meuParagrafo = document.querySelector("p")
+const dentroDoInput = document.querySelector("#main-input")
+const newParagrafo = document.querySelector(".valorDoInput")
 
 function cliqueiNoBotao(){
-console.log(inputTeste.value)
+        (newParagrafo.innerHTML = dentroDoInput.value)
+
 }
-
-function digiteiNoInput(){
-        meuParagrafo(inputTeste.value)
-}
-
-
