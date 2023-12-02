@@ -192,4 +192,4 @@ function testandoAfunction(){
     console.log("A FUNCTION apareceu na tela")
 }
 
-testandoAfunction()
+
