@@ -146,3 +146,5 @@ const seletor = document.querySelector("select")
 seletor.addEventListener("change", function(event){
         console.log(event)
 })
+
+
