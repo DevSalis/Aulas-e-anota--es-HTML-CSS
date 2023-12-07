@@ -37,8 +37,21 @@ Operadores Aritméticos
 /*
 Operadores Atribuição
 
+= => Um unico sinal de (=) é ATRIBUIÇÃO de valor. seja numero ou texto.
++= => Um sinal de (+) junto com o (=), seja antes ou após, é uma abreviação do codigo,
+        o sinal proximo ao (=) representa a respectiva variavel, dessa forma é dispensavel digitar o nome da variavel.
+        E logo após o (+= ou =+) digita o valor que deseja-se SOMAR a variavel (um vez que o (+) representa uma soma).
+-= => A mesma situção anterior, nesse caso inverte apenas a operação matematica, que nesse caso seria subtração (-).
+*= => A mesma situção anterior, nesse caso inverte apenas a operação matematica, que nesse caso seria multiplicação (*).
+/= => A mesma situção anterior, nesse caso inverte apenas a operação matematica, que nesse caso seria divisão (/).
+%= => A mesma situção anterior, nesse caso inverte apenas a operação matematica, que nesse caso seria apenas o valor que sobra do calculo (%).
 
 */
+
+let result02 = 10490
+result02 %= 111
+
+console.log(result02)
 
 
 
