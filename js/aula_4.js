@@ -15,10 +15,11 @@ ex: for ([Inicialização]; [Condição de continuação]; [Incremento ou expres
 obs: O LENGTH é usado para definir o tamanho de uma string, ou seja, os elementos dentro uma array.
     (A array é o nome que damos a variável que armazena vários elementos,
     Como uma sequência numérica, ou lista de usuários)
+
+    tolowercase() => é usado para converter uma string em letras minúsculas.
+    Por exemplo, se você tiver a string "HELLO WORLD", ao aplicar o método toLowerCase(),
+    ela será convertida para "hello world".
 */
 
-let family = ["Silas", "Rute", "Ruan", "Ladja"]
 
-for (let i = 0; i < family.length; i++) {
-    console.log(family[i])
-}
+

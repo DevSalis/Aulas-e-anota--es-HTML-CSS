@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando FOR-JavaScript</title>
+
+</head>
+
+<body>
+    <img src="./R.png" alt="logo-contatos">
+    <h1>Localizar contato</h1>
+    <p></p>
+    <input placeholder="Digite o nome do contato" type="text" name="localizador">
+    <button onclick="procurar()">Localizar</button>
+</body>
+
+<script>
+
+    let p = document.querySelector("p")
+    let input = document.querySelector("input")
+
+    const contacts = [
+        { name: "Silas", number: "(81) 989892631" },
+        { name: "Rute", number: "(81) 987221095" },
+        { name: "Ruan", number: "(81) 987654321" },
+        { name: "Ladja", number: "(81) 912345678" },
+    ]
+
+    function procurar() {
+        for (const nameAndNumber of contacts) {
+            if (input.value.toLowerCase() === nameAndNumber.name.toLowerCase()) {
+                p.innerHTML = `contato encontrado Nome:${nameAndNumber.name} Tel:${nameAndNumber.number}`
+            }
+        }
+    }
+</script>
+
+</html>
