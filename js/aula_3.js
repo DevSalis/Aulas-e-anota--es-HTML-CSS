@@ -15,10 +15,12 @@ OBS: para execultar o console.log na saida do terminal, vc deve salvar as altera
         floor => Arredonda pra baixo
 
         random => Mostra numero aleatório entre zero e 1
+
+        const result = 12 % 2
+console.log(result)
 */
 
-const result = 12 % 2
-console.log(result)
+
 
 /*
 Operadores Aritméticos
@@ -46,16 +48,53 @@ Operadores Atribuição
 /= => A mesma situção anterior, nesse caso inverte apenas a operação matematica, que nesse caso seria divisão (/).
 %= => A mesma situção anterior, nesse caso inverte apenas a operação matematica, que nesse caso seria apenas o valor que sobra do calculo (%).
 
-*/
 
 let result02 = 10490
-result02 %= 111
+result02 = result02 % 3
 
 console.log(result02)
 
+*/
 
 
 
+
+let novoCarrinho = [2, 5, 10, 20, 50, 100]
+let promotion = 0
+let economia = 0
+
+function formula01(price, desconto) {
+        const x1 = (price * desconto) / 100
+        return x1
+
+}
+
+function formula02(price, desconto) {
+        const x2 = (price * desconto)
+        return x2
+
+}
+
+novoCarrinho.forEach((mercadoria) => {
+        if (mercadoria > 30) {
+                const aplicarDesconto = formula01(mercadoria, 10)
+                promotion += mercadoria - aplicarDesconto
+        }
+
+        else {
+                promotion += mercadoria
+        }
+
+        if (mercadoria > 30) {
+                const aplicareconomia = formula02(mercadoria, 0.9)
+                economia += mercadoria - aplicareconomia
+        }
+
+});
+
+console.log(promotion)
+console.log(economia)
+console.log(promotion + economia)
 
 
 
