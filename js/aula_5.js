@@ -68,8 +68,6 @@ const newBoletin = boletin.map(alunos =>{
 
 console.log(newBoletin)
 
-*/
-
 // DESAFIO reduce( )
 
 const carrinhoDeCompra = [
@@ -90,10 +88,22 @@ const checkOut = carrinhoDeCompra.reduce((acc, value) =>{
 
 console.log(`total da compra: ${checkOut.toFixed(2)}`)
 
+*/
 
+const distribuidor = [
+    {industria: "Mars", contrato: 845, sku: "Pedigree e Wiskas", desde: 1898 },
+    {industria: "Nadi", contrato: 415, sku: "Utensilios de vidro para cozinha", desde: 1902},
+    {industria: "Melitta", contrato: 117, sku: "Café", desde: 1874 },
+    {industria: "Bom Bril", contrato: 383, sku: "Limbeza", desde: 1890 },
+    {industria: "Predillecta", contrato: 30, sku: "Molhos e doces", desde: 1906 },
+    {industria: "Qualidy", contrato: 50, sku: "Alimentos para pets", desde: 2010 },
 
+]
 
+const cardeal = distribuidor.map(valor => {
 
+    valor.contrato = valor.contrato + valor.contrato / 10
+    return valor
+})
 
-
-
+console.log(cardeal)
