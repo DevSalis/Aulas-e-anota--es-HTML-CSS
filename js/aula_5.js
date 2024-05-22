@@ -88,17 +88,8 @@ const checkOut = carrinhoDeCompra.reduce((acc, value) =>{
 
 console.log(`total da compra: ${checkOut.toFixed(2)}`)
 
-*/
 
-const distribuidor = [
-    {industria: "Mars", contrato: 845, sku: "Pedigree e Wiskas", desde: 1898 },
-    {industria: "Nadi", contrato: 415, sku: "Utensilios de vidro para cozinha", desde: 1902},
-    {industria: "Melitta", contrato: 117, sku: "Café", desde: 1874 },
-    {industria: "Bom Bril", contrato: 383, sku: "Limbeza", desde: 1890 },
-    {industria: "Predillecta", contrato: 30, sku: "Molhos e doces", desde: 1906 },
-    {industria: "Qualidy", contrato: 50, sku: "Alimentos para pets", desde: 2010 },
-
-]
+//desafio map, reduce e filter
 
 const cardeal = distribuidor.map(valor => {
 
@@ -109,3 +100,31 @@ const cardeal = distribuidor.map(valor => {
 },0)
 
 console.log(cardeal)
+
+*/
+
+const distribuidor = [
+    {industria: "Mars", contrato: 845, sku: "Pedigree e Wiskas", desde: 1898 },
+    {industria: "Nadi", contrato: 415, sku: "Utensilios de vidro para cozinha", desde: 1902},
+    {industria: "Melitta", contrato: 117, sku: "Café", desde: 1874 },
+    {industria: "Bom Bril", contrato: 383, sku: "Limbeza", desde: 1890 },
+    {industria: "Predillecta", contrato: 30, sku: "Molhos e doces", desde: 1906 },
+    {industria: "Qualidy", contrato: 50, sku: "Alimentos para pets", desde: 2010 },
+]
+
+const mapa = calculo => {
+    calculo.contrato = calculo.contrato - calculo.contrato / 10
+    return calculo
+}
+
+const filtrar = experiencia => (experiencia.desde > 1900)
+
+const reduzir = (acc, total) => {return acc + total.contrato}
+
+const desafio2 = distribuidor
+.map(mapa)
+.filter(filtrar)
+.reduce(reduzir,0)
+
+console.log(desafio2)
+
