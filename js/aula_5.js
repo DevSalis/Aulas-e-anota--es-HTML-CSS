@@ -104,6 +104,8 @@ const cardeal = distribuidor.map(valor => {
 
     valor.contrato = valor.contrato + valor.contrato / 10
     return valor
-})
+}).filter(iten => iten.desde < 1900).reduce((acumulador, valorAtual) => {
+    return acumulador + valorAtual.contrato
+},0)
 
 console.log(cardeal)
