@@ -101,16 +101,7 @@ const cardeal = distribuidor.map(valor => {
 
 console.log(cardeal)
 
-*/
-
-const distribuidor = [
-    {industria: "Mars", contrato: 845, sku: "Pedigree e Wiskas", desde: 1898 },
-    {industria: "Nadi", contrato: 415, sku: "Utensilios de vidro para cozinha", desde: 1902},
-    {industria: "Melitta", contrato: 117, sku: "Café", desde: 1874 },
-    {industria: "Bom Bril", contrato: 383, sku: "Limbeza", desde: 1890 },
-    {industria: "Predillecta", contrato: 30, sku: "Molhos e doces", desde: 1906 },
-    {industria: "Qualidy", contrato: 50, sku: "Alimentos para pets", desde: 2010 },
-]
+//desafio inverso
 
 const mapa = calculo => {
     calculo.contrato = calculo.contrato - calculo.contrato / 10
@@ -126,5 +117,26 @@ const desafio2 = distribuidor
 .filter(filtrar)
 .reduce(reduzir,0)
 
-console.log(desafio2)
+const devMercado = distribuidor.map( reajuste => {
+    reajuste.contrato = reajuste.contrato + reajuste.contrato / 10
+    return reajuste
+}).filter(selection => selection.desde > 1950).reduce((acc, total) =>{return acc + total.contrato},0)
+
+
+
+console.log(devMercado)
+
+*/
+
+const industrias = [
+    {industria: "Mars", contrato: 230, sku: "Chocolates e alimentos pet", desde: 1923 },
+    {industria: "Nadir", contrato: 470, sku: "Utensilios de vidro para cozinha", desde: 1947},
+    {industria: "Melitta", contrato: 110, sku: "Café", desde: 1908},
+    {industria: "BomBril", contrato: 480, sku: "Limbeza", desde: 1948},
+    {industria: "Predilecta", contrato: 130, sku: "Molhos e doces", desde: 1990},
+    {industria: "Adimax", contrato: 50, sku: "Alimentos pets", desde: 2002},
+    {industria: "Unilever", contrato: 290, sku: "higiene, cosmeticos e perfumaria", desde: 1929},
+]
+
+
 
