@@ -138,5 +138,12 @@ const industrias = [
     {industria: "Unilever", contrato: 290, sku: "higiene, cosmeticos e perfumaria", desde: 1929},
 ]
 
+const distribuidor = industrias.map(valor => {
+    valor.contrato = valor.contrato + valor.contrato / 10
+    return valor
+}).filter(selection => selection.desde > 1950).reduce((acc, total) => { return acc + total.contrato},0)
+
+
+console.log(distribuidor)
 
 
