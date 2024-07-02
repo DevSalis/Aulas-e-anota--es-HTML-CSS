@@ -76,6 +76,7 @@ const carrinhoDeCompra = [
     {produdo: "Macarrão", valor: 4.49, unid: 3 },
     {produdo: "Flocão", valor: 1.79, unid: 10 },
     {produdo: "Kg. Coxa e sobre coxa", valor: 15.99, unid: 8 },
+    {produdo: "Kg. asinha", valor: 15.99, unid: 8 },
 ]
 
 const checkOut = carrinhoDeCompra.reduce((acc, value) =>{
