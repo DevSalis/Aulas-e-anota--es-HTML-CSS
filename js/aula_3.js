@@ -94,7 +94,6 @@ novoCarrinho.forEach((mercadoria) => {
 
 console.log(promotion)
 console.log(economia)
-console.log(promotion + economia)
 
 
 
