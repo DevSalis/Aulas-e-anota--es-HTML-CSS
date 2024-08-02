@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./pratica.css">
+    <title>quiz css</title>
+</head>
+<body>
+    <h1>Oque acontece ao clicar no botão?</h1>
+    <img src="./img/pedra-papel-tesoura.png" alt="jokenpo">
+    <button onclick="myButton()">CLICK AQUI</button>
+</body>
+
+<script>
+
+const myImg = document.querySelector("img")
+let isAnimating = false;
+
+function myButton() {
+
+    if (isAnimating) {
+                myImg.style.animation = "none";
+            } else {
+                myImg.style.animation = "girar 5s linear infinite";
+            }
+            isAnimating = !isAnimating;
+
+    console.log("cliquei no botão do quiz")
+}
+</script>
+</html>

@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ body {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+ }
+
+ img {
+    width: 200px;
+ }
+
+ @keyframes girar {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+ button {
+    width: 20%;
+    background-color: #69e036;
+    border-radius: 5px;
+    height: 5%;
+    cursor: pointer;
+ }
+
+ button:hover {
+background-color: aquamarine;
+transition: 0.3s;
+ }
