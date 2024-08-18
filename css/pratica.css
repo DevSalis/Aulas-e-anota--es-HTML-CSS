@@ -19,19 +19,7 @@ img {
     width: 200px;
 }
 
-@keyframes abacate {
-    from {
-        transform: rotate(0deg);
-    }
 
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-.queroSaber {
-    animation: abacate 2s linear infinite;
-}
 
 button {
     width: 20%;
