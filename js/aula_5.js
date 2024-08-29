@@ -125,7 +125,7 @@ const devMercado = distribuidor.map( reajuste => {
 
 
 
-console.log(devMercado)
+console.log(teste)
 
 */
 
