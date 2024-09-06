@@ -48,7 +48,7 @@ button:hover {
 }
 
 /*
- @keyframes rotation {
+ @keyframes abacate {
     from {
         opacity: 0;
     }
@@ -57,11 +57,11 @@ button:hover {
     }
  }
 
- .rotate {
-    animation: rotation 2s ease-in-out;
+ .queroSaber {
+    animation: abacate 2s ease-in-out;
  }
 
- @keyframes slide {
+ @keyframes abacate {
     from {
         transform: translateX(0);
     }
@@ -70,11 +70,11 @@ button:hover {
     }
 }
 
- .rotate {
-    animation: slide 3s ease-in-out infinite alternate;
+ .queroSaber {
+    animation: abacate 3s ease-in-out infinite alternate;
  }
 
- @keyframes zoomIn {
+ @keyframes abacate {
     from {
         transform: scale(0.5);
     }
@@ -83,7 +83,7 @@ button:hover {
     }
 }
 
-.rotate {
-    animation: zoomIn 1s ease-out;
+.queroSaber {
+    animation: abacate 1s ease-out;
 }
  */
