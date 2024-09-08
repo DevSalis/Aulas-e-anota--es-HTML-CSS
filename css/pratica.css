@@ -20,19 +20,17 @@ img {
 }
 
 @keyframes abacate {
-
     from {
-        transform: rotate(0deg);
+        opacity: 0;
     }
-
     to {
-        transform: rotate(360deg);
+        opacity: 1;
     }
-}
+ }
 
-.queroSaber {
-    animation: abacate 2s linear infinite;
-}
+ .queroSaber {
+    animation: abacate 2s ease-in-out;
+ }
 
 button {
     width: 20%;
