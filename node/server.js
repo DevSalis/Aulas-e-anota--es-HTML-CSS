@@ -1,16 +1,17 @@
 import express from "express";
 const app = express()
+const user = []
 
 app.use(express.json())
 
-app.get('/usuario/:abacate2', (req, res) => {
-    console.log(req)
-    res.send("Meu back-end esta fincionando")
+app.get('/usuario', (req, res) => {
+    
+    res.status(200).json(user)
 })
 
 app.post('/usuario', (req, res) => {
-    console.log(req)
-    res.send("rota post ok")
+    user.push(req.body)
+    res.status(201).json({message: "Usuário cadastrado com sucesso"})
 })
 
 app.listen(3000)
