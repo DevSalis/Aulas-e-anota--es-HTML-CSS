@@ -15,3 +15,8 @@ app.post('/usuario', (req, res) => {
 })
 
 app.listen(3000)
+
+/*
+username mongoDb: philipcost
+senha: H1bfP4Zk0jiQbB7R
+*/
