@@ -8,5 +8,10 @@
   "keywords": [],
   "author": "Silas Felipe",
   "license": "ISC",
-  "description": "pratica de JWT com Node.js"
+  "description": "pratica de JWT com Node.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2"
+  }
 }

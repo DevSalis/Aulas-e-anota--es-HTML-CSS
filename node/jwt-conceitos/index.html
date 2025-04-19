@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JWT Playground</title>
+  </head>
+  <body>
+    <h1>JWT Playground 🔐</h1>
+
+    <h2>🔓 Gerar Token (simulando login)</h2>
+    <input type="text" id="nomeInput" placeholder="Digite seu nome" />
+    <button onclick="fazerLogin()">Login e gerar token</button>
+    <br /><br />
+
+    <h2>✍️ Token manual</h2>
+    <textarea
+      id="tokenInput"
+      rows="4"
+      cols="80"
+      placeholder="Cole ou veja seu token aqui"
+    ></textarea
+    ><br />
+    <button onclick="definirToken()">Definir Token</button>
+    <br /><br />
+
+    <h2>🔐 Acessar rota protegida</h2>
+    <button onclick="acessarProtegido()">Acessar rota protegida</button>
+
+    <script>
+      let token = null;
+
+      function fazerLogin() {
+        const nome = document.getElementById("nomeInput").value.trim();
+        if (!nome) {
+          alert("Digite um nome!");
+          return;
+        }
+
+        fetch("http://localhost:3000/login", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ nome }),
+        })
+          .then((res) => res.json())
+          .then((data) => {
+            if (data.token) {
+              token = data.token;
+              document.getElementById("tokenInput").value = token;
+              alert("Token gerado com sucesso!");
+              console.log("Token:", token);
+            } else {
+              alert("Erro ao gerar token");
+            }
+          });
+      }
+
+      function definirToken() {
+        const input = document.getElementById("tokenInput").value.trim();
+        if (input) {
+          token = input;
+          console.log("Token manual definido:", token);
+          alert("Token definido!");
+        } else {
+          alert("Cole um token válido!");
+        }
+      }
+
+      function acessarProtegido() {
+        if (!token) {
+          alert("Token não disponível!");
+          return;
+        }
+
+        fetch("http://localhost:3000/protegido", {
+          method: "GET",
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        })
+          .then((res) => res.json())
+          .then((data) => {
+            console.log("Resposta:", data);
+            alert(JSON.stringify(data, null, 2));
+          })
+          .catch((error) => {
+            console.error("Erro:", error);
+            alert("Erro ao acessar a rota protegida");
+          });
+      }
+    </script>
+  </body>
+</html>
