@@ -1,12 +1,11 @@
 import express from "express";
 const app = express();
-const user = [];
 
 app.use(express.json());
+const user = [];
 
-app.get("/usuario/:abacate", (req, res) => {
-  console.log(req);
-  res.status(200).json({ mensagem: "teste get" });
+app.get("/usuario", (req, res) => {
+  res.status(200).json(user);
 });
 
 app.post("/usuario", (req, res) => {
