@@ -1,6 +1,9 @@
 import express from "express";
 const app = express();
 
+import { PrismaClient } from "@prisma/client";
+const prisma = new PrismaClient();
+
 app.use(express.json());
 const user = [];
 
