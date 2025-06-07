@@ -49,13 +49,3 @@ app.delete("/usuario/:id", async (req, res) => {
 });
 
 app.listen(3000);
-
-/*
-username mongoDb: philipcost
-senha: H1bfP4Zk0jiQbB7R
-*/
-
-/*
-username mongoDb: devsilasfrontback
-senha: oPeUktAEe9AHK4ZT
-*/
