@@ -61,15 +61,22 @@ app.get("/usuario", async (req, res) => {
  *         description: Usuário criado
  */
 app.post("/usuario", async (req, res) => {
-  const user = await prisma.user.create({
-    data: {
-      email: req.body.email,
-      age: req.body.age,
-      name: req.body.name,
-    },
-  });
+  try {
+    const { age } = req.body;
+    if (age < 18) throw new Error("Idade deve ser maior ou igual a 18 anos");
 
-  res.status(201).json(user);
+    const user = await prisma.user.create({
+      data: {
+        email: req.body.email,
+        age: req.body.age,
+        name: req.body.name,
+      },
+    });
+
+    res.status(201).json(user);
+  } catch (err) {
+    return res.status(400).json(err.message);
+  }
 });
 
 /**
